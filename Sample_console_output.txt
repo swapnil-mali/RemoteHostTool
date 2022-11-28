@@ -1,0 +1,104 @@
+root@root-Inspiron-15-3511:~/temp$ python3.10 get_host_iface.py 
+host,username,password
+
+========================================================
+[Log]: Connecting to Host:    localhost
+
+Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.15.0-52-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+1 device has a firmware upgrade available.
+Run `fwupdmgr get-upgrades` for more information.
+
+
+267 updates can be applied immediately.
+39 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+1 device has a firmware upgrade available.
+Run `fwupdmgr get-upgrades` for more information.
+
+Last login: Sat Nov 26 20:39:51 IST 2022 from localhost on pts/1
+root@root-Inspiron-15-3511:~$
+[Log]: Connected to host
+ ifconfig
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 15886  bytes 2320986 (2.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15886  bytes 2320986 (2.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.10.5  netmask 255.255.255.240  broadcast 172.20.10.15
+        inet6 2401:4900:1b32:7b57:2f65:f646:3b25:5bee  prefixlen 64  scopeid 0x0<global>
+        inet6 2401:4900:1b32:7b57:b3af:8dc9:7bd8:cca0  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::378:e74f:84d2:e9c1  prefixlen 64  scopeid 0x20<link>
+        ether 30:03:c8:3e:d8:1f  txqueuelen 1000  (Ethernet)
+        RX packets 42764  bytes 30228490 (30.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 30481  bytes 7901444 (7.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@root-Inspiron-15-3511:~$
+Closing connection to host localhost
+========================================================
+========================================================
+[Log]: Connecting to Host:    127.0.0.1
+
+Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.15.0-52-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+1 device has a firmware upgrade available.
+Run `fwupdmgr get-upgrades` for more information.
+
+
+267 updates can be applied immediately.
+39 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+1 device has a firmware upgrade available.
+Run `fwupdmgr get-upgrades` for more information.
+
+Last login: Sat Nov 26 21:22:59 IST 2022 from localhost on pts/1
+root@root-Inspiron-15-3511:~$
+[Log]: Connected to host
+ ifconfig
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 15933  bytes 2325416 (2.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15933  bytes 2325416 (2.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.10.5  netmask 255.255.255.240  broadcast 172.20.10.15
+        inet6 2401:4900:1b32:7b57:2f65:f646:3b25:5bee  prefixlen 64  scopeid 0x0<global>
+        inet6 2401:4900:1b32:7b57:b3af:8dc9:7bd8:cca0  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::378:e74f:84d2:e9c1  prefixlen 64  scopeid 0x20<link>
+        ether 30:03:c8:3e:d8:1f  txqueuelen 1000  (Ethernet)
+        RX packets 42767  bytes 30228830 (30.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 30481  bytes 7901444 (7.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@root-Inspiron-15-3511:~$
+Closing connection to host 127.0.0.1
+========================================================
+{'localhost': {'lo': '127.0.0.1', 'wlp1s0': '172.20.10.5'}, '127.0.0.1': {'lo': '127.0.0.1', 'wlp1s0': '172.20.10.5'}}
+root@root-Inspiron-15-3511:~/temp$ vi remote_hosts.csv 
+root@root-Inspiron-15-3511:~/temp$ 
+
+
